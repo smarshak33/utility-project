@@ -1,0 +1,187 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>NYC Tree Map</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <h1>🌳 NYC Tree Snapshot</h1>
+      <h2> Will my neighborhood make me sneeze?</h2>
+      
+      <div class="main-container">
+            <label for="filterDropdown">My neighborhood or ZIP code is:</label>
+                <input text="Insert your neighborhood or ZIP code"></option>
+    
+            <label for="filterDropdown"> and I'm allergic to:</label>
+            <select id="filterDropdown">
+                <option value="all">All Trees</option>
+                <option value="Red Maple">Red Maple</option>
+                <option value="Pin Oak">Pin Oak</option>
+                <option value="Honeylocust">Honeylocust</option>
+                <option value="American Linden">American Linden</option>
+                <option value="London Planetree">London Planetree</option>
+                <option value="Ginkgo">Ginkgo</option>
+                <option value="Willow Oak">Willow Oak</option>
+                <option value="Sycamore Maple">Sycamore Maple</option>
+                <option value="Amur Maple">Amur Maple</option>
+                <option value="Hedge Maple">Hedge Maple</option>
+                <option value="American Elm">American Elm</option>
+                <option value="Ash">Ash</option>
+                <option value="Crab Apple">Crab Apple</option>
+                <option value="Silver Maple">Silver Maple</option>
+                <option value="Turkish Hazelnut">Turkish Hazelnut</option>
+                <option value="Black Cherry">Black Cherry</option>
+                <option value="Eastern Redcedar">Eastern Redcedar</option>
+                <option value="Norway Maple">Norway Maple</option>
+                <option value="Tulip-Poplar">Tulip-Poplar</option>
+                <option value="Sawtooth Oak">Sawtooth Oak</option>
+                <option value="Swamp White Oak">Swamp White Oak</option>
+                <option value="Sophora">Sophora</option>
+                <option value="Chinese Fringetree">Chinese Fringetree</option>
+                <option value="Southern Magnolia">Southern Magnolia</option>
+                <option value="Sweetgum">Sweetgum</option>
+                <option value="Callery Pear">Callery Pear</option>
+                <option value="Scarlet Oak">Scarlet Oak</option>
+                <option value="Atlantic White Cedar">Atlantic White Cedar</option>
+                <option value="Black Oak">Black Oak</option>
+                <option value="Japanese Zelkova">Japanese Zelkova</option>
+                <option value="White Oak">White Oak</option>
+                <option value="Ohio Buckeye">Ohio Buckeye</option>
+                <option value="Northern Red Oak">Northern Red Oak</option>
+                <option value="Silver Linden">Silver Linden</option>
+                <option value="Pignut Hickory">Pignut Hickory</option>
+                <option value="Kentucky Yellowwood">Kentucky Yellowwood</option>
+                <option value="Mulberry">Mulberry</option>
+                <option value="Douglas-Fir">Douglas-Fir</option>
+                <option value="Crepe Myrtle">Crepe Myrtle</option>
+                <option value="Sassafras">Sassafras</option>
+                <option value="Cherry">Cherry</option>
+                <option value="Spruce">Spruce</option>
+                <option value="Chinese Elm">Chinese Elm</option>
+                <option value="Horse Chestnut">Horse Chestnut</option>
+                <option value="Holly">Holly</option>
+                <option value="Littleleaf Linden">Littleleaf Linden</option>
+                <option value="White Pine">White Pine</option>
+                <option value="Blackgum">Blackgum</option>
+                <option value="Japanese Tree Lilac">Japanese Tree Lilac</option>
+                <option value="Hardy Rubber Tree">Hardy Rubber Tree</option>
+                <option value="Green Ash">Green Ash</option>
+                <option value="English Oak">English Oak</option>
+                <option value="White Ash">White Ash</option>
+                <option value="Golden Raintree">Golden Raintree</option>
+                <option value="Schumard's Oak">Schumard's Oak</option>
+                <option value="Siberian Elm">Siberian Elm</option>
+                <option value="Black Walnut">Black Walnut</option>
+                <option value="Weeping Willow">Weeping Willow</option>
+                <option value="Katsura Tree">Katsura Tree</option>
+                <option value="Black Locust">Black Locust</option>
+                <option value="Persian Ironwood">Persian Ironwood</option>
+                <option value="Cornelian Cherry">Cornelian Cherry</option>
+                <option value="Chinese Chestnut">Chinese Chestnut</option>
+                <option value="Southern Red Oak">Southern Red Oak</option>
+                <option value="Purple-Leaf Plum">Purple-Leaf Plum</option>
+                <option value="Crimson King Maple">Crimson King Maple</option>
+                <option value="Kentucky Coffeetree">Kentucky Coffeetree</option>
+                <option value="Japanese Snowbell">Japanese Snowbell</option>
+                <option value="Sugar Maple">Sugar Maple</option>
+                <option value="Arborvitae">Arborvitae</option>
+                <option value="Oklahoma Redbud">Oklahoma Redbud</option>
+                <option value="Tree Of Heaven">Tree Of Heaven</option>
+                <option value="Chinese Tree Lilac">Chinese Tree Lilac</option>
+                <option value="American Hornbeam">American Hornbeam</option>
+                <option value="Eastern Cottonwood">Eastern Cottonwood</option>
+                <option value="Eastern Hemlock">Eastern Hemlock</option>
+                <option value="Silver Birch">Silver Birch</option>
+                <option value="Atlas Cedar">Atlas Cedar</option>
+                <option value="Empress Tree">Empress Tree</option>
+                <option value="Hawthorn">Hawthorn</option>
+                <option value="'Schubert' Chokecherry">'Schubert' Chokecherry</option>
+                <option value="Catalpa">Catalpa</option>
+                <option value="River Birch">River Birch</option>
+                <option value="Boxelder">Boxelder</option>
+                <option value="European Beech">European Beech</option>
+                <option value="Norway Spruce">Norway Spruce</option>
+                <option value="Himalayan Cedar">Himalayan Cedar</option>
+                <option value="Amur Cork Tree">Amur Cork Tree</option>
+                <option value="Japanese Maple">Japanese Maple</option>
+                <option value="Shingle Oak">Shingle Oak</option>
+                <option value="Magnolia">Magnolia</option>
+                <option value="Smoketree">Smoketree</option>
+                <option value="Paper Birch">Paper Birch</option>
+                <option value="American Beech">American Beech</option>
+                <option value="American Hophornbeam">American Hophornbeam</option>
+                <option value="American Larch">American Larch</option>
+                <option value="Pond Cypress">Pond Cypress</option>
+                <option value="Cockspur Hawthorn">Cockspur Hawthorn</option>
+                <option value="Dawn Redwood">Dawn Redwood</option>
+                <option value="Common Hackberry">Common Hackberry</option>
+                <option value="Flowering Dogwood">Flowering Dogwood</option>
+                <option value="Maple">Maple</option>
+                <option value="Kousa Dogwood">Kousa Dogwood</option>
+                <option value="Eastern Redbud">Eastern Redbud</option>
+                <option value="Bald Cypress">Bald Cypress</option>
+                <option value="Cucumber Magnolia">Cucumber Magnolia</option>
+                <option value="Serviceberry">Serviceberry</option>
+                <option value="Osage-Orange">Osage-Orange</option>
+                <option value="Paperbark Maple">Paperbark Maple</option>
+                <option value="Red Pine">Red Pine</option>
+                <option value="Scots Pine">Scots Pine</option>
+                <option value="Tartar Maple">Tartar Maple</option>
+                <option value="Black Maple">Black Maple</option>
+                <option value="Blue Spruce">Blue Spruce</option>
+                <option value="Quaking Aspen">Quaking Aspen</option>
+                <option value="Red Horse Chestnut">Red Horse Chestnut</option>
+                <option value="Black Pine">Black Pine</option>
+                <option value="Shantung Maple">Shantung Maple</option>
+                <option value="European Alder">European Alder</option>
+                <option value="Amur Maackia">Amur Maackia</option>
+                <option value="European Hornbeam">European Hornbeam</option>
+                <option value="Bur Oak">Bur Oak</option>
+                <option value="Bigtooth Aspen">Bigtooth Aspen</option>
+                <option value="Trident Maple">Trident Maple</option>
+                <option value="Virginia Pine">Virginia Pine</option>
+                <option value="Two-Winged Silverbell">Two-Winged Silverbell</option>
+                <option value="Pagoda Dogwood">Pagoda Dogwood</option>
+                <option value="Japanese Hornbeam">Japanese Hornbeam</option>
+                <option value="Pine">Pine</option>
+                <option value="False Cypress">False Cypress</option>
+                <option value="Pitch Pine">Pitch Pine</option>
+                <option value="Mimosa">Mimosa</option>
+        
+    </div>
+    
+      <script src="script.js"></script>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
