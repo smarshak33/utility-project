@@ -1,187 +1,358 @@
-<html>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <title>NYC Tree Map</title>
-      <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-      <h1>🌳 NYC Tree Snapshot</h1>
-      <h2> Will my neighborhood make me sneeze?</h2>
-      
-      <div class="main-container">
-            <label for="filterDropdown">My neighborhood or ZIP code is:</label>
-                <input text="Insert your neighborhood or ZIP code"></option>
-    
-            <label for="filterDropdown"> and I'm allergic to:</label>
-            <select id="filterDropdown">
-                <option value="all">All Trees</option>
-                <option value="Red Maple">Red Maple</option>
-                <option value="Pin Oak">Pin Oak</option>
-                <option value="Honeylocust">Honeylocust</option>
-                <option value="American Linden">American Linden</option>
-                <option value="London Planetree">London Planetree</option>
-                <option value="Ginkgo">Ginkgo</option>
-                <option value="Willow Oak">Willow Oak</option>
-                <option value="Sycamore Maple">Sycamore Maple</option>
-                <option value="Amur Maple">Amur Maple</option>
-                <option value="Hedge Maple">Hedge Maple</option>
-                <option value="American Elm">American Elm</option>
-                <option value="Ash">Ash</option>
-                <option value="Crab Apple">Crab Apple</option>
-                <option value="Silver Maple">Silver Maple</option>
-                <option value="Turkish Hazelnut">Turkish Hazelnut</option>
-                <option value="Black Cherry">Black Cherry</option>
-                <option value="Eastern Redcedar">Eastern Redcedar</option>
-                <option value="Norway Maple">Norway Maple</option>
-                <option value="Tulip-Poplar">Tulip-Poplar</option>
-                <option value="Sawtooth Oak">Sawtooth Oak</option>
-                <option value="Swamp White Oak">Swamp White Oak</option>
-                <option value="Sophora">Sophora</option>
-                <option value="Chinese Fringetree">Chinese Fringetree</option>
-                <option value="Southern Magnolia">Southern Magnolia</option>
-                <option value="Sweetgum">Sweetgum</option>
-                <option value="Callery Pear">Callery Pear</option>
-                <option value="Scarlet Oak">Scarlet Oak</option>
-                <option value="Atlantic White Cedar">Atlantic White Cedar</option>
-                <option value="Black Oak">Black Oak</option>
-                <option value="Japanese Zelkova">Japanese Zelkova</option>
-                <option value="White Oak">White Oak</option>
-                <option value="Ohio Buckeye">Ohio Buckeye</option>
-                <option value="Northern Red Oak">Northern Red Oak</option>
-                <option value="Silver Linden">Silver Linden</option>
-                <option value="Pignut Hickory">Pignut Hickory</option>
-                <option value="Kentucky Yellowwood">Kentucky Yellowwood</option>
-                <option value="Mulberry">Mulberry</option>
-                <option value="Douglas-Fir">Douglas-Fir</option>
-                <option value="Crepe Myrtle">Crepe Myrtle</option>
-                <option value="Sassafras">Sassafras</option>
-                <option value="Cherry">Cherry</option>
-                <option value="Spruce">Spruce</option>
-                <option value="Chinese Elm">Chinese Elm</option>
-                <option value="Horse Chestnut">Horse Chestnut</option>
-                <option value="Holly">Holly</option>
-                <option value="Littleleaf Linden">Littleleaf Linden</option>
-                <option value="White Pine">White Pine</option>
-                <option value="Blackgum">Blackgum</option>
-                <option value="Japanese Tree Lilac">Japanese Tree Lilac</option>
-                <option value="Hardy Rubber Tree">Hardy Rubber Tree</option>
-                <option value="Green Ash">Green Ash</option>
-                <option value="English Oak">English Oak</option>
-                <option value="White Ash">White Ash</option>
-                <option value="Golden Raintree">Golden Raintree</option>
-                <option value="Schumard's Oak">Schumard's Oak</option>
-                <option value="Siberian Elm">Siberian Elm</option>
-                <option value="Black Walnut">Black Walnut</option>
-                <option value="Weeping Willow">Weeping Willow</option>
-                <option value="Katsura Tree">Katsura Tree</option>
-                <option value="Black Locust">Black Locust</option>
-                <option value="Persian Ironwood">Persian Ironwood</option>
-                <option value="Cornelian Cherry">Cornelian Cherry</option>
-                <option value="Chinese Chestnut">Chinese Chestnut</option>
-                <option value="Southern Red Oak">Southern Red Oak</option>
-                <option value="Purple-Leaf Plum">Purple-Leaf Plum</option>
-                <option value="Crimson King Maple">Crimson King Maple</option>
-                <option value="Kentucky Coffeetree">Kentucky Coffeetree</option>
-                <option value="Japanese Snowbell">Japanese Snowbell</option>
-                <option value="Sugar Maple">Sugar Maple</option>
-                <option value="Arborvitae">Arborvitae</option>
-                <option value="Oklahoma Redbud">Oklahoma Redbud</option>
-                <option value="Tree Of Heaven">Tree Of Heaven</option>
-                <option value="Chinese Tree Lilac">Chinese Tree Lilac</option>
-                <option value="American Hornbeam">American Hornbeam</option>
-                <option value="Eastern Cottonwood">Eastern Cottonwood</option>
-                <option value="Eastern Hemlock">Eastern Hemlock</option>
-                <option value="Silver Birch">Silver Birch</option>
-                <option value="Atlas Cedar">Atlas Cedar</option>
-                <option value="Empress Tree">Empress Tree</option>
-                <option value="Hawthorn">Hawthorn</option>
-                <option value="'Schubert' Chokecherry">'Schubert' Chokecherry</option>
-                <option value="Catalpa">Catalpa</option>
-                <option value="River Birch">River Birch</option>
-                <option value="Boxelder">Boxelder</option>
-                <option value="European Beech">European Beech</option>
-                <option value="Norway Spruce">Norway Spruce</option>
-                <option value="Himalayan Cedar">Himalayan Cedar</option>
-                <option value="Amur Cork Tree">Amur Cork Tree</option>
-                <option value="Japanese Maple">Japanese Maple</option>
-                <option value="Shingle Oak">Shingle Oak</option>
-                <option value="Magnolia">Magnolia</option>
-                <option value="Smoketree">Smoketree</option>
-                <option value="Paper Birch">Paper Birch</option>
-                <option value="American Beech">American Beech</option>
-                <option value="American Hophornbeam">American Hophornbeam</option>
-                <option value="American Larch">American Larch</option>
-                <option value="Pond Cypress">Pond Cypress</option>
-                <option value="Cockspur Hawthorn">Cockspur Hawthorn</option>
-                <option value="Dawn Redwood">Dawn Redwood</option>
-                <option value="Common Hackberry">Common Hackberry</option>
-                <option value="Flowering Dogwood">Flowering Dogwood</option>
-                <option value="Maple">Maple</option>
-                <option value="Kousa Dogwood">Kousa Dogwood</option>
-                <option value="Eastern Redbud">Eastern Redbud</option>
-                <option value="Bald Cypress">Bald Cypress</option>
-                <option value="Cucumber Magnolia">Cucumber Magnolia</option>
-                <option value="Serviceberry">Serviceberry</option>
-                <option value="Osage-Orange">Osage-Orange</option>
-                <option value="Paperbark Maple">Paperbark Maple</option>
-                <option value="Red Pine">Red Pine</option>
-                <option value="Scots Pine">Scots Pine</option>
-                <option value="Tartar Maple">Tartar Maple</option>
-                <option value="Black Maple">Black Maple</option>
-                <option value="Blue Spruce">Blue Spruce</option>
-                <option value="Quaking Aspen">Quaking Aspen</option>
-                <option value="Red Horse Chestnut">Red Horse Chestnut</option>
-                <option value="Black Pine">Black Pine</option>
-                <option value="Shantung Maple">Shantung Maple</option>
-                <option value="European Alder">European Alder</option>
-                <option value="Amur Maackia">Amur Maackia</option>
-                <option value="European Hornbeam">European Hornbeam</option>
-                <option value="Bur Oak">Bur Oak</option>
-                <option value="Bigtooth Aspen">Bigtooth Aspen</option>
-                <option value="Trident Maple">Trident Maple</option>
-                <option value="Virginia Pine">Virginia Pine</option>
-                <option value="Two-Winged Silverbell">Two-Winged Silverbell</option>
-                <option value="Pagoda Dogwood">Pagoda Dogwood</option>
-                <option value="Japanese Hornbeam">Japanese Hornbeam</option>
-                <option value="Pine">Pine</option>
-                <option value="False Cypress">False Cypress</option>
-                <option value="Pitch Pine">Pitch Pine</option>
-                <option value="Mimosa">Mimosa</option>
-        
-    </div>
-    
-      <script src="script.js"></script>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NYC Tree Map</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌳 NYC Tree Snapshot</h1>
+  <h2> Will my neighborhood make me sneeze?</h2>
+  
+  <div class="main-container">
+
+          <label for="ntaDropdown">My neighborhood is:</label>
+          <input id="ntaDropdown" list="ntaList" placeholder="Type your neighborhood" required="">
+          <datalist id="ntaList">
+            <option value="Forest Hills"></option>
+            <option value="Whitestone"></option>
+            <option value="East Williamsburg"></option>
+            <option value="Park Slope-Gowanus"></option>
+            <option value="Lincoln Square"></option>
+            <option value="Clinton"></option>
+            <option value="Grasmere-Arrochar-Ft. Wadsworth"></option>
+            <option value="Gravesend"></option>
+            <option value="Steinway"></option>
+            <option value="Great Kills"></option>
+            <option value="Clinton Hill"></option>
+            <option value="Brownsville"></option>
+            <option value="Bensonhurst East"></option>
+            <option value="Flatbush"></option>
+            <option value="Corona"></option>
+            <option value="Fort Greene"></option>
+            <option value="Upper East Side-Carnegie Hill"></option>
+            <option value="Upper West Side"></option>
+            <option value="Oakwood-Oakwood Beach"></option>
+            <option value="Kew Gardens"></option>
+            <option value="Ocean Parkway South"></option>
+            <option value="Chinatown"></option>
+            <option value="Ridgewood"></option>
+            <option value="East Tremont"></option>
+            <option value="Old Town-Dongan Hills-South Beach"></option>
+            <option value="Mount Hope"></option>
+            <option value="New Dorp-Midland Beach"></option>
+            <option value="Sheepshead Bay-Gerritsen Beach-Manhattan Beach"></option>
+            <option value="Stuyvesant Town-Cooper Village"></option>
+            <option value="SoHo-TriBeCa-Civic Center-Little Italy"></option>
+            <option value="Todt Hill-Emerson Hill-Heartland Village-Lighthouse Hill"></option>
+            <option value="Madison"></option>
+            <option value="Queensboro Hill"></option>
+            <option value="Annadale-Huguenot-Prince's Bay-Eltingville"></option>
+            <option value="Belmont"></option>
+            <option value="Arden Heights"></option>
+            <option value="Murray Hill-Kips Bay"></option>
+            <option value="West Village"></option>
+            <option value="Carroll Gardens-Columbia Street-Red Hook"></option>
+            <option value="Morningside Heights"></option>
+            <option value="Jackson Heights"></option>
+            <option value="Norwood"></option>
+            <option value="University Heights-Morris Heights"></option>
+            <option value="Brighton Beach"></option>
+            <option value="Bay Ridge"></option>
+            <option value="Midwood"></option>
+            <option value="Murray Hill"></option>
+            <option value="Rugby-Remsen Village"></option>
+            <option value="Flushing"></option>
+            <option value="Far Rockaway-Bayswater"></option>
+            <option value="Bushwick North"></option>
+            <option value="Hammels-Arverne-Edgemere"></option>
+            <option value="Fordham South"></option>
+            <option value="Springfield Gardens South-Brookville"></option>
+            <option value="Rego Park"></option>
+            <option value="Queens Village"></option>
+            <option value="Prospect Heights"></option>
+            <option value="Bensonhurst West"></option>
+            <option value="Erasmus"></option>
+            <option value="Woodlawn-Wakefield"></option>
+            <option value="East Elmhurst"></option>
+            <option value="Lenox Hill-Roosevelt Island"></option>
+            <option value="Astoria"></option>
+            <option value="Gramercy"></option>
+            <option value="Woodhaven"></option>
+            <option value="Breezy Point-Belle Harbor-Rockaway Park-Broad Channel"></option>
+            <option value="Kensington-Ocean Parkway"></option>
+            <option value="Fresh Meadows-Utopia"></option>
+            <option value="Auburndale"></option>
+            <option value="Greenpoint"></option>
+            <option value="New Springville-Bloomfield-Travis"></option>
+            <option value="Van Cortlandt Village"></option>
+            <option value="Flatlands"></option>
+            <option value="Homecrest"></option>
+            <option value="Midtown-Midtown South"></option>
+            <option value="Glendale"></option>
+            <option value="Battery Park City-Lower Manhattan"></option>
+            <option value="Central Harlem South"></option>
+            <option value="Hunters Point-Sunnyside-West Maspeth"></option>
+            <option value="Borough Park"></option>
+            <option value="St. Albans"></option>
+            <option value="Laurelton"></option>
+            <option value="Bayside-Bayside Hills"></option>
+            <option value="Oakland Gardens"></option>
+            <option value="Jamaica Estates-Holliswood"></option>
+            <option value="College Point"></option>
+            <option value="Claremont-Bathgate"></option>
+            <option value="Turtle Bay-East Midtown"></option>
+            <option value="Highbridge"></option>
+            <option value="Douglas Manor-Douglaston-Little Neck"></option>
+            <option value="Crown Heights North"></option>
+            <option value="North Side-South Side"></option>
+            <option value="Pelham Parkway"></option>
+            <option value="Old Astoria"></option>
+            <option value="Lindenwood-Howard Beach"></option>
+            <option value="East New York"></option>
+            <option value="Bushwick South"></option>
+            <option value="Ocean Hill"></option>
+            <option value="Prospect Lefferts Gardens-Wingate"></option>
+            <option value="Lower East Side"></option>
+            <option value="Hudson Yards-Chelsea-Flatiron-Union Square"></option>
+            <option value="Sunset Park East"></option>
+            <option value="Bedford"></option>
+            <option value="West Farms-Bronx River"></option>
+            <option value="Richmond Hill"></option>
+            <option value="Westerleigh"></option>
+            <option value="Schuylerville-Throgs Neck-Edgewater Park"></option>
+            <option value="Georgetown-Marine Park-Bergen Beach-Mill Basin"></option>
+            <option value="Yorkville"></option>
+            <option value="Eastchester-Edenwald-Baychester"></option>
+            <option value="Elmhurst-Maspeth"></option>
+            <option value="Stuyvesant Heights"></option>
+            <option value="Kingsbridge Heights"></option>
+            <option value="Van Nest-Morris Park-Westchester Square"></option>
+            <option value="Melrose South-Mott Haven North"></option>
+            <option value="East New York (Pennsylvania Ave)"></option>
+            <option value="Bath Beach"></option>
+            <option value="Seagate-Coney Island"></option>
+            <option value="Rossville-Woodrow"></option>
+            <option value="East Village"></option>
+            <option value="Cypress Hills-City Line"></option>
+            <option value="Canarsie"></option>
+            <option value="Sunset Park West"></option>
+            <option value="Washington Heights South"></option>
+            <option value="Charleston-Richmond Valley-Tottenville"></option>
+            <option value="Kew Gardens Hills"></option>
+            <option value="Pelham Bay-Country Club-City Island"></option>
+            <option value="Williamsburg"></option>
+            <option value="East Harlem South"></option>
+            <option value="Woodside"></option>
+            <option value="New Brighton-Silver Lake"></option>
+            <option value="Bellerose"></option>
+            <option value="Crotona Park East"></option>
+            <option value="Dyker Heights"></option>
+            <option value="Elmhurst"></option>
+            <option value="Mariner's Harbor-Arlington-Port Ivory-Graniteville"></option>
+            <option value="Glen Oaks-Floral Park-New Hyde Park"></option>
+            <option value="Crown Heights South"></option>
+            <option value="Hamilton Heights"></option>
+            <option value="South Ozone Park"></option>
+            <option value="Manhattanville"></option>
+            <option value="Ft. Totten-Bay Terrace-Clearview"></option>
+            <option value="Longwood"></option>
+            <option value="Cambria Heights"></option>
+            <option value="Stapleton-Rosebank"></option>
+            <option value="East Flatbush-Farragut"></option>
+            <option value="West Brighton"></option>
+            <option value="Mott Haven-Port Morris"></option>
+            <option value="Soundview-Castle Hill-Clason Point-Harding Park"></option>
+            <option value="DUMBO-Vinegar Hill-Downtown Brooklyn-Boerum Hill"></option>
+            <option value="West Concourse"></option>
+            <option value="Bedford Park-Fordham North"></option>
+            <option value="Rosedale"></option>
+            <option value="Spuyten Duyvil-Kingsbridge"></option>
+            <option value="Ozone Park"></option>
+            <option value="Marble Hill-Inwood"></option>
+            <option value="Hunts Point"></option>
+            <option value="West New Brighton-New Brighton-St. George"></option>
+            <option value="Briarwood-Jamaica Hills"></option>
+            <option value="Queensbridge-Ravenswood-Long Island City"></option>
+            <option value="Windsor Terrace"></option>
+            <option value="Williamsbridge-Olinville"></option>
+            <option value="Washington Heights North"></option>
+            <option value="East Flushing"></option>
+            <option value="Pomonok-Flushing Heights-Hillcrest"></option>
+            <option value="East Concourse-Concourse Village"></option>
+            <option value="North Riverdale-Fieldston-Riverdale"></option>
+            <option value="Brooklyn Heights-Cobble Hill"></option>
+            <option value="Port Richmond"></option>
+            <option value="Grymes Hill-Clifton-Fox Hills"></option>
+            <option value="East Harlem North"></option>
+            <option value="North Corona"></option>
+            <option value="Morrisania-Melrose"></option>
+            <option value="Soundview-Bruckner"></option>
+            <option value="Allerton-Pelham Gardens"></option>
+            <option value="Jamaica"></option>
+            <option value="Parkchester"></option>
+            <option value="Central Harlem North-Polo Grounds"></option>
+            <option value="Co-op City"></option>
+            <option value="Middle Village"></option>
+            <option value="Hollis"></option>
+            <option value="Baisley Park"></option>
+            <option value="Maspeth"></option>
+            <option value="South Jamaica"></option>
+            <option value="Westchester-Unionport"></option>
+            <option value="Springfield Gardens North"></option>
+            <option value="Starrett City"></option>
+            <option value="Bronxdale"></option>
+          </datalist>
+
+        <label for="filterDropdown"> and I'm allergic to:</label>
+        <input id="filterDropdown" list="treeList" placeholder="Select or type a tree" required="">
+        <datalist id="treeList">
+            <option value="all">All Trees</option>
+            <option value="Red Maple">Red Maple</option>
+            <option value="Pin Oak">Pin Oak</option>
+            <option value="Honeylocust">Honeylocust</option>
+            <option value="American Linden">American Linden</option>
+            <option value="London Planetree">London Planetree</option>
+            <option value="Ginkgo">Ginkgo</option>
+            <option value="Willow Oak">Willow Oak</option>
+            <option value="Sycamore Maple">Sycamore Maple</option>
+            <option value="Amur Maple">Amur Maple</option>
+            <option value="Hedge Maple">Hedge Maple</option>
+            <option value="American Elm">American Elm</option>
+            <option value="Ash">Ash</option>
+            <option value="Crab Apple">Crab Apple</option>
+            <option value="Silver Maple">Silver Maple</option>
+            <option value="Turkish Hazelnut">Turkish Hazelnut</option>
+            <option value="Black Cherry">Black Cherry</option>
+            <option value="Eastern Redcedar">Eastern Redcedar</option>
+            <option value="Norway Maple">Norway Maple</option>
+            <option value="Tulip-Poplar">Tulip-Poplar</option>
+            <option value="Sawtooth Oak">Sawtooth Oak</option>
+            <option value="Swamp White Oak">Swamp White Oak</option>
+            <option value="Sophora">Sophora</option>
+            <option value="Chinese Fringetree">Chinese Fringetree</option>
+            <option value="Southern Magnolia">Southern Magnolia</option>
+            <option value="Sweetgum">Sweetgum</option>
+            <option value="Callery Pear">Callery Pear</option>
+            <option value="Scarlet Oak">Scarlet Oak</option>
+            <option value="Atlantic White Cedar">Atlantic White Cedar</option>
+            <option value="Black Oak">Black Oak</option>
+            <option value="Japanese Zelkova">Japanese Zelkova</option>
+            <option value="White Oak">White Oak</option>
+            <option value="Ohio Buckeye">Ohio Buckeye</option>
+            <option value="Northern Red Oak">Northern Red Oak</option>
+            <option value="Silver Linden">Silver Linden</option>
+            <option value="Pignut Hickory">Pignut Hickory</option>
+            <option value="Kentucky Yellowwood">Kentucky Yellowwood</option>
+            <option value="Mulberry">Mulberry</option>
+            <option value="Douglas-Fir">Douglas-Fir</option>
+            <option value="Crepe Myrtle">Crepe Myrtle</option>
+            <option value="Sassafras">Sassafras</option>
+            <option value="Cherry">Cherry</option>
+            <option value="Spruce">Spruce</option>
+            <option value="Chinese Elm">Chinese Elm</option>
+            <option value="Horse Chestnut">Horse Chestnut</option>
+            <option value="Holly">Holly</option>
+            <option value="Littleleaf Linden">Littleleaf Linden</option>
+            <option value="White Pine">White Pine</option>
+            <option value="Blackgum">Blackgum</option>
+            <option value="Japanese Tree Lilac">Japanese Tree Lilac</option>
+            <option value="Hardy Rubber Tree">Hardy Rubber Tree</option>
+            <option value="Green Ash">Green Ash</option>
+            <option value="English Oak">English Oak</option>
+            <option value="White Ash">White Ash</option>
+            <option value="Golden Raintree">Golden Raintree</option>
+            <option value="Schumard's Oak">Schumard's Oak</option>
+            <option value="Siberian Elm">Siberian Elm</option>
+            <option value="Black Walnut">Black Walnut</option>
+            <option value="Weeping Willow">Weeping Willow</option>
+            <option value="Katsura Tree">Katsura Tree</option>
+            <option value="Black Locust">Black Locust</option>
+            <option value="Persian Ironwood">Persian Ironwood</option>
+            <option value="Cornelian Cherry">Cornelian Cherry</option>
+            <option value="Chinese Chestnut">Chinese Chestnut</option>
+            <option value="Southern Red Oak">Southern Red Oak</option>
+            <option value="Purple-Leaf Plum">Purple-Leaf Plum</option>
+            <option value="Crimson King Maple">Crimson King Maple</option>
+            <option value="Kentucky Coffeetree">Kentucky Coffeetree</option>
+            <option value="Japanese Snowbell">Japanese Snowbell</option>
+            <option value="Sugar Maple">Sugar Maple</option>
+            <option value="Arborvitae">Arborvitae</option>
+            <option value="Oklahoma Redbud">Oklahoma Redbud</option>
+            <option value="Tree Of Heaven">Tree Of Heaven</option>
+            <option value="Chinese Tree Lilac">Chinese Tree Lilac</option>
+            <option value="American Hornbeam">American Hornbeam</option>
+            <option value="Eastern Cottonwood">Eastern Cottonwood</option>
+            <option value="Eastern Hemlock">Eastern Hemlock</option>
+            <option value="Silver Birch">Silver Birch</option>
+            <option value="Atlas Cedar">Atlas Cedar</option>
+            <option value="Empress Tree">Empress Tree</option>
+            <option value="Hawthorn">Hawthorn</option>
+            <option value="'Schubert' Chokecherry">'Schubert' Chokecherry</option>
+            <option value="Catalpa">Catalpa</option>
+            <option value="River Birch">River Birch</option>
+            <option value="Boxelder">Boxelder</option>
+            <option value="European Beech">European Beech</option>
+            <option value="Norway Spruce">Norway Spruce</option>
+            <option value="Himalayan Cedar">Himalayan Cedar</option>
+            <option value="Amur Cork Tree">Amur Cork Tree</option>
+            <option value="Japanese Maple">Japanese Maple</option>
+            <option value="Shingle Oak">Shingle Oak</option>
+            <option value="Magnolia">Magnolia</option>
+            <option value="Smoketree">Smoketree</option>
+            <option value="Paper Birch">Paper Birch</option>
+            <option value="American Beech">American Beech</option>
+            <option value="American Hophornbeam">American Hophornbeam</option>
+            <option value="American Larch">American Larch</option>
+            <option value="Pond Cypress">Pond Cypress</option>
+            <option value="Cockspur Hawthorn">Cockspur Hawthorn</option>
+            <option value="Dawn Redwood">Dawn Redwood</option>
+            <option value="Common Hackberry">Common Hackberry</option>
+            <option value="Flowering Dogwood">Flowering Dogwood</option>
+            <option value="Maple">Maple</option>
+            <option value="Kousa Dogwood">Kousa Dogwood</option>
+            <option value="Eastern Redbud">Eastern Redbud</option>
+            <option value="Bald Cypress">Bald Cypress</option>
+            <option value="Cucumber Magnolia">Cucumber Magnolia</option>
+            <option value="Serviceberry">Serviceberry</option>
+            <option value="Osage-Orange">Osage-Orange</option>
+            <option value="Paperbark Maple">Paperbark Maple</option>
+            <option value="Red Pine">Red Pine</option>
+            <option value="Scots Pine">Scots Pine</option>
+            <option value="Tartar Maple">Tartar Maple</option>
+            <option value="Black Maple">Black Maple</option>
+            <option value="Blue Spruce">Blue Spruce</option>
+            <option value="Quaking Aspen">Quaking Aspen</option>
+            <option value="Red Horse Chestnut">Red Horse Chestnut</option>
+            <option value="Black Pine">Black Pine</option>
+            <option value="Shantung Maple">Shantung Maple</option>
+            <option value="European Alder">European Alder</option>
+            <option value="Amur Maackia">Amur Maackia</option>
+            <option value="European Hornbeam">European Hornbeam</option>
+            <option value="Bur Oak">Bur Oak</option>
+            <option value="Bigtooth Aspen">Bigtooth Aspen</option>
+            <option value="Trident Maple">Trident Maple</option>
+            <option value="Virginia Pine">Virginia Pine</option>
+            <option value="Two-Winged Silverbell">Two-Winged Silverbell</option>
+            <option value="Pagoda Dogwood">Pagoda Dogwood</option>
+            <option value="Japanese Hornbeam">Japanese Hornbeam</option>
+            <option value="Pine">Pine</option>
+            <option value="False Cypress">False Cypress</option>
+            <option value="Pitch Pine">Pitch Pine</option>
+            <option value="Mimosa">Mimosa</option>
+        </datalist><br><br>
+
+        <button class="submitButton" type="submit">Submit</button>
+
+
+        <!-- <div class="result">
+          <span id="treeText">There are </span><span id="treeCount">0</span><span id="treeSuffix"> trees in your neighborhood that may cause allergies. You are </span><span id="percentageRisk">0</span><span id="riskSuffix"> to sneeze compared to any other neighborhood in NYC.</span>
+        </div> -->
+
+
+</div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <script src="script.js"></script>
+</body>
 </html>
