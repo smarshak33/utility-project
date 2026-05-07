@@ -1,0 +1,250 @@
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    font-family: "Fira Sans", sans-serif;
+    background-color: #DAFDBA;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 200px;
+  }
+
+  
+
+h1 {
+      font-size: 45px;
+      background-color: white; 
+      color: black; 
+      align-items: center;
+      align-content: center;
+      text-align: center; 
+      padding: 10px 20px; 
+      border-radius: 8px; 
+      margin: 20px auto; 
+  }
+  
+
+h2 {
+    font-size: 30px;
+    text-align: center; 
+    margin: 20px auto; 
+    width: 700px; 
+    padding: 10px;
+    border-radius: 5px;
+  
+  }
+
+.main-container {
+    align-content: center;
+    align-items: center;
+    margin: 80px auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    padding: 30px;
+    text-align: justify;
+    background-color: white;
+    width: 650px;
+  }
+    
+.form-container{
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 0;
+
+  }
+  
+.result{
+    align-items: center;
+    text-align: center;
+    margin: 22px;
+    margin-top: 0px;
+    background-color: #9AEBA3;
+    border-radius: 5px;
+  }
+
+th {
+    border-bottom: 1px solid #080B0F;
+    text-align: center;
+}
+
+td {
+    border-bottom: 1px solid #080B0F;
+    text-align: justify;
+  }
+
+h3 {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submitButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.submitButton:hover {
+  background-color: #45a049;
+}
+
+#ntaDropdown{
+  font-size: 25px;
+  border: 2px gray solid;
+}
+#treeDropdown{
+  font-size: 25px;
+  border: 2px gray solid;
+}
+
+.datalist{
+  position: absolute;
+  
+ } 
+
+table {
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 600px) {
+
+  .main-container {
+    align-content: center;
+    align-items: center;
+    margin: 30px auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    padding: 18px;
+    text-align: justify;
+    background-color: white;
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 35px; 
+    background-color: white; 
+    color: black; 
+    text-align: center; 
+    padding: 10px 10px; 
+    border-radius: 8px; 
+    margin: 18px auto;
+  }
+
+  h2 {
+    font-size: 30px; 
+    text-align: center; 
+    margin: 18px auto; 
+    width: 95%; 
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .submitButton {
+    font-size: 25px;
+  }
+
+  .result {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  table {
+    font-size: 25px;
+    margin: 20px;
+    
+  }
+
+  #ntaDropdown, #treeDropdown {
+    font-size: 25px; 
+    font-family: "Fira-Sans", sans-serif;
+  }
+
+  .datalist {
+    position: absolute;
+  }
+}
+ 
+@media (min-width: 601px) and (max-width: 1199px) { 
+
+  .main-container {
+    align-content: center;
+    align-items: center;
+    margin: 50px auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    padding: 20px;
+    text-align: justify;
+    background-color: white;
+    width: 85%;
+  }
+
+  h1 {
+    font-size: 40px;
+    background-color: white; 
+    color: black; 
+    text-align: center; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    margin: 20px auto;
+  }
+
+  h2 {
+    font-size: 35px;
+    text-align: center; 
+    margin: 20px auto; 
+    width: 90%; 
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  table {
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #ntaDropdown, #treeDropdown {
+    font-size: 25px;
+    font-family: "Fira-Sans", sans-serif;
+  }
+
+  .datalist {
+    position: absolute;
+  }
+}
+
+
+
+
+ 
