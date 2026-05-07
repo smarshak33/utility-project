@@ -5,7 +5,7 @@ let cachedData = null;
 async function getTreeData() {
     if (cachedData) return cachedData; // Return existing data if already downloaded
     
-    const response = await fetch('treesCDN.json');
+    const response = await fetch('treesData.json');
     if (!response.ok) throw new Error('Network response was not ok');
     
     cachedData = await response.json();
